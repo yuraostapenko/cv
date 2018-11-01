@@ -147,30 +147,25 @@ const Main = ({lang}) => {
       <section className='softSkill hover' id='Soft'>
         <i className='far fa-gem fa-2x' />
         <h2 className='educatioTitle'>
-          {lang ? 'Soft skills' : 'Додаткові вміння'}
+          {lang ? ' Soft skills.' : ' Додаткові вміння.'}
         </h2>
         <ul className='softSkillMain'>
           <li className='softSkillList'>
-            {lang ? 'Teamwork' : 'Команднй гравець'}
+            {lang ? ' Teamwork.' : ' Командний гравець.'}
           </li>
           <li className='softSkillList'>
-            {lang ? 'Decision-Making' : 'Вмію приймати рішення'}
+            {lang ? ' Decision-Making.' : ' Вмію приймати рішення.'}
           </li>
           <li className='softSkillList'>
-            {lang ? 'Emotional Awareness' : 'Стресостійкий'}
+            {lang ? ' Positive attitude.' : ' Позитивно настроєний.'}
           </li>
           <li className='softSkillList'>
-            {lang ? 'Positive Attitude' : 'Позитивно настроєнй'}
+            {lang ? ' Communication.' : ' Комунікабельний.'}
           </li>
           <li className='softSkillList'>
-            {lang ? 'Communication' : 'Комунікабельний'}
+            {lang ? ' Initiative.' : ' Ініціативний.'}
           </li>
-          <li className='softSkillList'>
-            {lang ? 'Initiative' : 'Ініціативний'}
-          </li>
-          <li className='softSkillList'>
-            {lang ? 'Cultural Fitness' : 'Відповідаю корпоративній культурі'}
-          </li>
+          
         </ul>
       </section>
 
