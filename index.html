@@ -1,0 +1,121 @@
+
+<!DOCTYPE html><html class=''>
+<head><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/du5rte/pen/EyRVkJ?limit=all&page=66&q=react" />
+
+
+<style class="cp-pen-styles">body {
+  color: white;
+  background: #FFC400;
+  font-size: 10em;
+}
+
+#render {
+  position: absolute;
+  height: 1em;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+</style></head><body>
+<div id="render"></div>
+<script src='https://unpkg.com/react@15.5.4/dist/react.js'></script><script src='https://unpkg.com/react-dom@15.5.4/dist/react-dom.js'></script><script src='https://unpkg.com/react-motion@0.5.0/build/react-motion.js'></script>
+<script >'use strict';
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _React = React;
+var Component = _React.Component;
+var PropTypes = _React.PropTypes;
+var _ReactDOM = ReactDOM;
+var render = _ReactDOM.render;
+var _ReactMotion = ReactMotion;
+var Motion = _ReactMotion.Motion;
+var spring = _ReactMotion.spring;
+var presets = _ReactMotion.presets;
+
+var HamburgerButton = function (_Component) {
+  _inherits(HamburgerButton, _Component);
+
+  function HamburgerButton() {
+    _classCallCheck(this, HamburgerButton);
+
+    var _this = _possibleConstructorReturn(this, _Component.call(this));
+
+    _this.state = {
+      toggle: false
+    };
+    return _this;
+  }
+
+  HamburgerButton.prototype.handleClick = function handleClick() {
+    this.setState({ toggle: !this.state.toggle });
+  };
+
+  HamburgerButton.prototype.render = function render() {
+    var style = {
+      overflow: 'visible',
+      cursor: 'pointer',
+      // disable touch highlighting on devices
+      WebkitTapHighlightColor: "rgba(0,0,0,0)"
+    };
+
+    return React.createElement(
+      'svg',
+      {
+        viewBox: '0 0 96 96',
+        height: '1em',
+        onClick: this.handleClick.bind(this),
+        style: style
+      },
+      React.createElement(
+        Motion,
+        {
+          style: {
+            x: spring(this.state.toggle ? 1 : 0, presets.wobbly),
+            y: spring(this.state.toggle ? 0 : 1, presets.wobbly)
+          }
+        },
+        function (_ref) {
+          var x = _ref.x;
+          var y = _ref.y;
+          return React.createElement(
+            'g',
+            {
+              id: 'navicon',
+              fill: 'none',
+              stroke: 'currentColor',
+              strokeWidth: '14',
+              strokeLinecap: 'round',
+              strokeLinejoin: 'round'
+            },
+            React.createElement('line', {
+              transform: 'translate(' + x * 12 + ', ' + x * -7 + ') rotate(' + x * 45 + ', 7, 26)',
+              x1: '7', y1: '26', x2: '89', y2: '26'
+            }),
+            React.createElement('line', {
+              transform: 'translate(' + x * 12 + ', ' + x * 7 + ') rotate(' + x * -45 + ', 7, 70)',
+              x1: '7', y1: '70', x2: '89', y2: '70'
+            }),
+            React.createElement('line', {
+              transform: 'translate(' + x * -96 + ')',
+              opacity: y,
+              x1: '7', y1: '48', x2: '89', y2: '48'
+            })
+          );
+        }
+      )
+    );
+  };
+
+  return HamburgerButton;
+}(Component);
+
+render(React.createElement(HamburgerButton, null), document.getElementById('render'));
+//# sourceURL=pen.js
+</script>
+</body></html>

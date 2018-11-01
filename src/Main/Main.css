@@ -1,0 +1,278 @@
+.main {
+    padding: 5px;
+background-color: #167bab;
+}
+
+.contacts, .projects, .technicalSkills, .experians, .education, .softSkill, .additional {
+    margin: 2.5em 0.5em;
+    transition: outline 0.6s linear;
+    padding: 5px;
+    box-shadow: 0 0 30px 10px #151417de;
+}
+.hover:hover{
+    box-shadow: 0 0 14px 9px #009ce6;
+    transition: 0.6s;
+}
+
+.contactsTitle {
+    margin-left: 10px;
+    font-weight: 600;
+    font-family: 'Comfortaa', cursive;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #f7f7fd;
+    font-size: 26px;
+    text-shadow: 2px 1px 4px #000305;
+}
+
+.fas {
+    color: #000;
+    padding-right: 3px;
+    display: inline-block;
+}
+
+.fab {
+    color: #000;
+    padding-right: 3px;
+    display: inline-block;
+}
+
+.contactMain {
+    text-align: left;
+}
+
+.contactListMain {
+    font-weight: 500;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 11px;
+    padding: 3px;
+
+}
+
+.linkContact {
+    text-decoration: none;
+    color: #173e43;
+    font-weight: 500;
+    padding-left: 3px;
+}
+
+.projectsTitle, .technicalSkillsTitle, .workTitle, .educatioTitle, .additionalTitle{
+    margin-left: 10px;
+    font-weight: 600;
+    font-family: 'Comfortaa', cursive;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #f7f7fd;
+    font-size: 26px;
+    text-shadow: 2px 1px 4px #000305;
+}
+
+.projectList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.proj {
+    height: 100px;
+    width: 125px;
+    background-color: #81c4d7;
+    margin-right: 5px;
+    text-align: center;
+    box-shadow: 0 1px 18px 0 #151417de;
+    padding: 10px 5px;
+}
+
+.proj:hover {
+    background-color: #afcad2;
+    box-shadow: 0 1px 18px 6px #00b4ea;
+}
+
+.proj:nth-last-child(-1n+1) {
+    margin-right: 0;
+}
+
+.projectListText {
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Comfortaa', cursive;
+    color: #000000;
+}
+
+.projectNames {
+    font-weight: 700;
+    color: #f5f5f5;
+    font-size: 12px;
+}
+
+.skillsMain {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.technicalSkilllist {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    width: 50%;
+    padding-bottom: 5px;
+}
+
+.far {
+    color: #173e43;
+    display: inline-block;
+}
+
+.workMain {
+    text-align: left;
+}
+
+.workList, .educationList, .softSkillList, .additionalList {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Comfortaa', cursive;
+    font-size: 11px;
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+
+.educationMain {
+    text-align: left;
+}
+
+.softSkill:hover { outline-width: 10px; }
+
+
+.softSkillMain {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.additionalMain {
+    text-align: left;
+}
+
+.pdf {
+  text-decoration: none;
+    /* color: #173e43; */
+    font-weight: 500;
+    font-family: 'Comfortaa', cursive;
+    font-size: 10px; 
+    list-style: none;
+    margin-left: auto;
+}
+
+.linkContact {
+    color: #eaeaf7;
+    font-size: 12px;
+}
+
+
+
+@media (min-width: 768px) {
+   .main {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-around;
+   }
+   .contacts{
+       width: 45%;
+   }
+
+   .contactListMain{
+       font-size: 14px;
+   }
+
+   .projectListText{
+    font-size: 14px;
+}
+
+.technicalSkilllist{
+    font-size: 14px;
+}
+
+.workList{
+    font-size: 14px;
+}
+
+.educationList{
+    font-size: 14px;
+}
+
+.additionalList{
+    font-size: 14px;
+}
+
+.softSkillList{
+    font-size: 14px;
+}
+
+   .projects {
+       width: 45%;
+   }
+
+   .technicalSkills {
+    width: 45%;
+   }
+
+   .experians {
+    width: 45%;  
+   }
+
+   .education {
+    width: 45%;  
+   }
+
+   .softSkill{
+    width: 45%;    
+   }
+
+   .additional {
+    width: 45%;    
+   }
+    
+  }
+
+  @media (min-width: 1200px) {
+    .contacts{
+        width: 30%;
+    }
+ 
+    .projects {
+        width: 30%;
+    }
+ 
+    .technicalSkills {
+     width: 30%;
+    }
+ 
+    .experians {
+     width: 30%;  
+    }
+ 
+    .education {
+     width: 30%;  
+    }
+ 
+    .softSkill{
+     width: 30%;    
+    }
+ 
+    .additional {
+     width: 30%;    
+    }
+  }
+
+
+
