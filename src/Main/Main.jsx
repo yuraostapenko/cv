@@ -57,7 +57,7 @@ const Main = ({lang}) => {
         <div className='projectList'>
           <div className='proj lendos'>
             <span className='projectListText'>
-              {lang ? 'project made only by HTML/CSS' : 'проект зроблений на HTML/CSS'}
+              {lang ? 'made only by HTML/CSS' : 'проект зроблений на HTML/CSS'}
               <a className='linkContact'
               href='https://yuraostapenko.github.io/HTML-CSS__lending/HTML-CSS__lending/build/index.html'
               target='_blank' rel='noopener noreferrer'>
@@ -68,18 +68,18 @@ const Main = ({lang}) => {
           </div>
           <div className='proj game'>
             <span className='projectListText'>
-              {lang ? 'project made by HTML/CSS & JAVASCRIPT' : 'проект зроблений на HTML/CSS & JAVASCRIPT'}
+              {lang ? 'made by HTML/CSS & JAVASCRIPT' : 'проект зроблений на HTML/CSS & JAVASCRIPT'}
               <a className='linkContact'
               href='https://yuraostapenko.github.io/game-mortalIcon/game/index.html'
               target='_blank' rel='noopener noreferrer'>
               <br/>
-              <span className='projectNames'>Memory Game</span>
+              <span className='projectNames'>M-GAME</span>
             </a>
             </span>
           </div>
           <div className='proj shaleniy'>
             <span className='projectListText'>
-              {lang ? 'project made by REACT&REDUX' : 'проект зроблений на REACT&REDUX'}
+              {lang ? 'made by REACT&REDUX' : 'проект зроблений на REACT&REDUX'}
               <a className='linkContact'
               href='https://shaleniy.herokuapp.com'
               target='_blank' rel='noopener noreferrer'>
