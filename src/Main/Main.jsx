@@ -98,8 +98,8 @@ const Main = ({lang}) => {
         </h2>
         <ul className='skillsMain'>
           <li className='technicalSkilllist'>HTML & CSS</li>
-          <li className='technicalSkilllist'>Javascript</li>
-          <li className='technicalSkilllist'>React & Reducs</li>
+          <li className='technicalSkilllist'>JavaScript</li>
+          <li className='technicalSkilllist'>React & Redux</li>
           <li className='technicalSkilllist'>GIThub</li>
           <li className='technicalSkilllist'>Trello</li>
           <li className='technicalSkilllist'>Slack</li>
